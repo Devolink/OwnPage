@@ -10,49 +10,76 @@
 </head>
     <body>
 
-
-
-
         <div class="container">
-            <header class="header sinPaddingSinMargin row w-100">
+            <header class="header sinPaddingSinMargin w-100">
                 <div class="sinPaddingSinMargin col-6 titleDiv">
                     <div class="title">Devolink</div>
+                    <div class="subtitle">Desarrollo de software</div>
                 </div>
-                <div class="sinPaddingSinMargin col-6 text-center">
+                <!-- <div class="sinPaddingSinMargin col-6 text-center">
                         <img class="imgPrincipal" src="assets/images/1.jpg" >
-                </div>            
+                </div>             -->
             </header>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-6">
+                    <form id="contact" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="white" for="name" class="form-label"><strong>Nombre</strong></label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="white" for="lastname" class="form-label"><strong>Apellido</strong></label>
+                                    <input type="text" class="form-control" id="lastname" name="lastname" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="white" for="phone" class="form-label"><strong>Teléfono</strong></label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label class="white" for="email" class="form-label"><strong>Email</strong></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="white" for="message" class="form-label"><strong>Mensaje</strong></label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div id="messageDiv" style="display: none;" class="white alert alert-success">
+                                    Correo enviado exitosamente.
+                                </div>
+                                <button type="button" id="submitButton" class="btn btn-primary btnSubmit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <div class="sinPaddingSinMargin col-6 text-center">
+                        <img class="imgPrincipal" src="assets/images/1.jpg" >
+                    </div>            
+                </div>
+            </div>
+            
+        </div>
 
     </body>
 </html>

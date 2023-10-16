@@ -38,19 +38,46 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #64ee85;
+    font-family: 'arkhip', sans-serif !important;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+.white {
+    color: #fff
 }
 
 .titleDiv {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .title {
     color: #64ee85;
     font-family: 'arkhip', sans-serif !important;
     font-size: 5rem;
+    text-align: center;
+}
+
+.subtitle {
+    color: #64ee85;
+    font-family: 'arkhip', sans-serif !important;
+    font-size: 2rem;
     text-align: center;
 }
 

@@ -80,6 +80,41 @@
             </div>
             
         </div>
-
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('submitButton').addEventListener('click', function() {
+                    // Obtén los valores del formulario
+                    var name = document.getElementById('name').value;
+                    var lastname = document.getElementById('lastname').value;
+                    var phone = document.getElementById('phone').value;
+                    var email = document.getElementById('email').value;
+                    var message = document.getElementById('message').value;
+        
+                    // Crea un objeto FormData para enviar los datos
+                    var formData = new FormData();
+                    formData.append('name', name);
+                    formData.append('lastname', lastname);
+                    formData.append('phone', phone);
+                    formData.append('email', email);
+                    formData.append('message', message);
+        
+                    // Realiza la solicitud AJAX
+                    var xhr = new XMLHttpRequest();
+                    xhr.open('POST', 'contacto.php', true);
+                    xhr.onload = function() {
+                        if (xhr.status === 200) {
+                            // Si la solicitud es exitosa, muestra el mensaje y borra el formulario
+                            document.getElementById('messageDiv').style.display = 'block';
+                            document.getElementById('contact').reset();
+                        } else {
+                            // Si hay un error, muestra un mensaje de error
+                            console.error('Error en la solicitud AJAX');
+                        }
+                    };
+                    xhr.send(formData);
+                });
+            });
+    
+        </script>
     </body>
 </html>

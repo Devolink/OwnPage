@@ -10,8 +10,8 @@ if (isset($_POST["name"]) && isset($_POST["lastname"]) && isset($_POST["phone"])
     $mensaje = $_POST["message"];
 
     $smtpHost = "c2102232.ferozo.com";
-    $smtpUsuario = "contacto@devolink.com.ar";
-    $smtpClave = "FLNSoftory@2023";
+    $smtpUsuario = "cloudflare@devolink.com.ar";
+    $smtpClave = "Wx*lUs@7sU";
     $emailDestino = "devolinkweb@gmail.com";
 
     require("class.phpmailer.php");
